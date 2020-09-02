@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+    <html>
+        <head>
+            <title>Lecture 4</title>
+            <meta charset="utf-8">
+            <meta name="description" content="The website design">
+            <style>
+                .test1{
+                    color:white;
+                    background:#f00
+                }
+              .test2{
+                color:blue;
+                background:green
+              }
+              fieldset{ padding:10px;background:#EEE;margin-bottom:20px;width:500px;margin:20px auto}
+              legend{border:2px solid #FFF;background:#CCC;padding:5px;}
+              label{display:block;margin-bottom:2px;padding:5px;}
+              input{margin-bottom:2px;}
+              input[type="name"],input[type="password"],textarea{
+                display:block;
+              }
+            </style>
+            <script>
+                function signup() {
+              alert("To Sign Up");}
+            </script>
+        </head>
+        <body style="background:#fffc00">
+            
+            <div class="test1">
+                Hello students
+            </div>
+            <div class="test2">
+                Hello students
+            </div>
+<!part 2>
+    
+    <form name="login page" action="log.php" method="post">
+        <fieldset>
+                <legend>Personal Information</legend>
+                <label>UserName:</label><input type="name" placeholder="username" value="" maxlength="10">
+      
+                <label>Password:</label><input type="password" placeholder="password" value="">
+           
+               <input type="checkbox">Remember me 
+        <br>
+                <input type="submit" value="Log in" >
+                <input type="button" name="sign up"value="Sign Up" onclick="signup()">
+    </fieldset>
+                        <fieldset>
+                    <legend>Other Option</legend>
+                <label>Your Massage</label>
+                <textarea id="text_area" cols="40" rows="5" ></textarea><br>
+                <label>Attachment files</label><input type="file" value="upload file"><br>
+               <input type="reset" value="Restore Default">
+
+    </fieldset>
+    <fieldset>
+         <legend>Your Favorite</legend>
+        <h1>Select Phone</h1>
+        <input type="radio" name="phones" value="I phone" >I phone
+        <input type="radio" name="phones" value="SAMSONG" >SAMSONG
+        <input type="radio" name="phones" value="NOKIA" >NOKIA
+        <h1>Select Drink</h1>
+        <input type="radio"  value="Tea" >Tea
+        <input type="radio"  value="Coffee" >Coffee
+        <input type="radio"  value="milk" >milk
+        <hr>
+        <h1>To Rating</h1>
+            <label>Gender</label>
+            <select name="Gender">
+             <option value="1" selected>Male</option>
+               <option value="2">Female</option>
+            </select>
+        <select name="rating">
+            <optgroup label="Place">
+             <option value="1" >University</option>
+               <option value="2">College</option>
+            </optgroup>
+                     <optgroup label="Status">
+             <option value="3" selected>student</option>
+               <option value="4">graduate</option>
+            </optgroup>
+                     
+</select>
+
+                    <br>
+                    <input type="submit">
+        <input   name="image1" type="image" src="C:\Users\Belal\Desktop\Graphic Design\logo_1.png" alt="logo">
+    </fieldset>
+
+
+            </form>
+        </body>
+    </html>
